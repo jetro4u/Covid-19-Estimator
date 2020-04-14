@@ -1,10 +1,12 @@
 {
   "name": "covid-19-estimator-js",
   "version": "1.0.0",
+  "main": "server.js",
   "repository": "git@github.com:BuildforSDG-Cohort1-Assessment/covid-19-estimator-js.git",
   "license": "MIT",
   "private": false,
   "scripts": {
+    "start": "node server.js",
     "lint": "eslint ./src/"
   },
   "engines": {
