@@ -3,12 +3,10 @@ const Sequelize = require('sequelize')
 const path = require("path")
 
 // Load configuration based on environment
-const env = process.env.NODE_ENV || "development";
+const env = process.env.NODE_ENV || "production";
 const config = require(path.join(__dirname, './config/config.json'))[env]
 
-const sequelize = new Sequelize(config.database, config.username, config.password, {
-  host: 'localhost',
-  dialect: 'postgres',
+const sequelize = new Sequelize(config.use_env_variable, {
   pool: {
     max: 5,
     min: 0,
