@@ -1,0 +1,26 @@
+{
+  "development": {
+    "port": "process.env.DB_PORT",
+    "database": "process.env.DB_NAME",
+    "user": "process.env.DB_USERNAME",
+    "password": "process.env.DB_PASSWORD",
+    "host": "process.env.DB_HOSTNAME",
+    "dialect": "postgres"
+  },
+  "test": {
+    "port": "process.env.DB_PORT",
+    "database": "process.env.DB_NAME",
+    "user": "process.env.DB_USERNAME",
+    "password": "process.env.DB_PASSWORD",
+    "host": "process.env.DB_HOSTNAME",
+    "dialect": "postgres"
+  },
+  "production": {
+    "port": "process.env.DB_PORT",
+    "database": "process.env.DB_NAME",
+    "user": "process.env.DB_USERNAME",
+    "password": "process.env.DB_PASSWORD",
+    "host": "process.env.DB_HOSTNAME",
+    "dialect": "postgres"
+    }
+}
